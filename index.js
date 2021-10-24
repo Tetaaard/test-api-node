@@ -14,6 +14,7 @@ connectDatabase();
 
 app.use("/api/user", user);
 
+// exporter ces 2 methodes ça dans un fichier "handleErrors" ?
 app.use((req, res, next) => {
   const error = new Error("Not Found!");
   error.status = 404;
