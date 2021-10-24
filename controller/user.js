@@ -13,12 +13,12 @@ module.exports.createUser = async (req, res, next) => {
 
     await newUser.save();
 
-    return res.send(newUser);
+    return res.status(200).send(newUser);
   } catch (err) {
     next(err);
   }
 };
 
 module.exports.protectedRoute = async (req, res, next) => {
-  return res.send("route protégée");
+  return res.status(200).send("route protégée");
 };
