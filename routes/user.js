@@ -1,11 +1,18 @@
 const express = require("express");
 const userController = require("../controller/user");
-const { validateCreateUser2 } = require("../controller/user.validate");
+const { withValidateBody } = require("../middleware/validation");
 const router = express.Router();
 const auth = require("../middleware/auth");
+const Joi = require("joi");
 
-router.post("/", validateCreateUser2, userController.createUser);
-
+router.post(
+  "/",
+  withValidateBody({
+    email: Joi.string().email().required(),
+    name: Joi.string().required(),
+  }),
+  userController.createUser
+);
 router.get("/", auth, userController.protectedRoute);
 
 module.exports = router;

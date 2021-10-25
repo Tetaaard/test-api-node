@@ -1,19 +1,17 @@
-const User = require("../model/User");
+const { saveUser } = require("../model/user.crud");
 
 module.exports.createUser = async (req, res, next) => {
   try {
     const { email, name } = req.body;
 
-    await User.findOne({ email: req.body.email });
-
-    const newUser = new User({
+    const user = {
       name,
       email,
-    });
+    };
 
-    await newUser.save();
+    const response = await saveUser(user);
 
-    return res.status(200).send(newUser);
+    res.status(200).send(response);
   } catch (err) {
     next(err);
   }
