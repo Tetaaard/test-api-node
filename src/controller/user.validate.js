@@ -1,5 +1,6 @@
+//into folder validator
 const Joi = require("joi");
-
+  
 module.exports.validateCreateUser = (user) => {
   const schema = Joi.object({
     email: Joi.string().email().required(),

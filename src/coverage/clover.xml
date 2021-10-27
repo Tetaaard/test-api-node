@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1635337489901" clover="3.2.0">
-  <project timestamp="1635337489902" name="All files">
+<coverage generated="1635336083280" clover="3.2.0">
+  <project timestamp="1635336083280" name="All files">
     <metrics statements="61" coveredstatements="45" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="5" elements="77" coveredelements="56" complexity="0" loc="61" ncloc="61" packages="3" files="4" classes="4"/>
     <package name="controller">
       <metrics statements="40" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="2"/>
-      <file name="user.js" path="/home/garance/Document/test-api-node/src/controller/user.js">
+      <file name="user.js" path="/home/garance/Document/test-api-node/controller/user.js">
         <metrics statements="26" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -16,24 +16,24 @@
         <line num="15" count="5" type="stmt"/>
         <line num="17" count="5" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
-        <line num="40" count="3" type="stmt"/>
-        <line num="41" count="3" type="stmt"/>
-        <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
       </file>
-      <file name="user.validate.js" path="/home/garance/Document/test-api-node/src/controller/user.validate.js">
+      <file name="user.validate.js" path="/home/garance/Document/test-api-node/controller/user.validate.js">
         <metrics statements="14" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -53,7 +53,7 @@
     </package>
     <package name="model">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="User.js" path="/home/garance/Document/test-api-node/src/model/User.js">
+      <file name="User.js" path="/home/garance/Document/test-api-node/model/User.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -64,7 +64,7 @@
     </package>
     <package name="tests">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="db.js" path="/home/garance/Document/test-api-node/src/tests/db.js">
+      <file name="db.js" path="/home/garance/Document/test-api-node/tests/db.js">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

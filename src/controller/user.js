@@ -20,13 +20,29 @@ module.exports.createUser = async (name, email) => {
   }
 };
 
-module.exports.updateUserMail = async (currentEmail, newMail) => {
+// module.exports.updateUserMail = async (currentEmail, newMail) => {
+//   try {
+//     let newEmailExist = await User.exists({ email: newMail });
+
+//     if (newEmailExist) throw new Error("Email already taken");
+
+//     let user = await User.findOneAndUpdate({ email: currentEmail }, { email: newMail }, { new: true });
+
+//     if (!user) throw new Error("user does not exist");
+
+//     return user;
+//   } catch (err) {
+//     throw err;
+//   }
+// };
+
+module.exports.updateUserField = async (field, currentValue, newValue) => {
   try {
-    let newEmailExist = await User.exists({ email: newMail });
+    let newValueExist = await User.exists({ [field]: newValue });
 
-    if (newEmailExist) throw new Error("Email already taken");
+    if (newValueExist) throw new Error("Email already taken");
 
-    let user = await User.findOneAndUpdate({ email: currentEmail }, { email: newMail }, { new: true });
+    let user = await User.findOneAndUpdate({ [field]: currentValue }, { [field]: newValue }, { new: true });
 
     if (!user) throw new Error("user does not exist");
 
